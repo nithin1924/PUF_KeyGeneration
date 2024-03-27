@@ -1,0 +1,1200 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Mar  4 13:55:59 2024
+| Host         : DESKTOP-0AEVHHL running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file Main_Puf_timing_summary_routed.rpt -pb Main_Puf_timing_summary_routed.pb -rpx Main_Puf_timing_summary_routed.rpx -warn_on_violation
+| Design       : Main_Puf
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity  Description               Violations  
+---------  --------  ------------------------  ----------  
+TIMING-23  Warning   Combinational loop found  8           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (8)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (8)
+---------------------
+ There are 8 combinational loops in the design. (HIGH)
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                    8          inf        0.000                      0                    8           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay             8 Endpoints
+Min Delay             8 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 C[0]
+                            (input port)
+  Destination:            Q[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        41.524ns  (logic 9.187ns (22.125%)  route 32.337ns (77.875%))
+  Logic Levels:           36  (IBUF=1 LUT3=34 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    G22                                               0.000     0.000 r  C[0] (IN)
+                         net (fo=0)                   0.000     0.000    C[0]
+    G22                  IBUF (Prop_ibuf_I_O)         1.469     1.469 r  C_IBUF[0]_inst/O
+                         net (fo=80, routed)          2.023     3.492    A0/m02/sel
+    SLICE_X110Y105       LUT3 (Prop_lut3_I0_O)        0.124     3.616 r  A0/m02/l1/O
+                         net (fo=2, routed)           0.806     4.422    A0/m11/b
+    SLICE_X110Y104       LUT3 (Prop_lut3_I2_O)        0.124     4.546 f  A0/m11/l1/O
+                         net (fo=2, routed)           0.679     5.226    A0/m21/a
+    SLICE_X110Y104       LUT3 (Prop_lut3_I1_O)        0.124     5.350 r  A0/m21/l1/O
+                         net (fo=2, routed)           0.808     6.158    A0/m32/b
+    SLICE_X110Y105       LUT3 (Prop_lut3_I2_O)        0.124     6.282 f  A0/m32/l1/O
+                         net (fo=2, routed)           0.896     7.178    A0/m41/b
+    SLICE_X108Y105       LUT3 (Prop_lut3_I2_O)        0.124     7.302 r  A0/m41/l1/O
+                         net (fo=2, routed)           0.942     8.244    A0/m51/a
+    SLICE_X106Y107       LUT3 (Prop_lut3_I1_O)        0.124     8.368 f  A0/m51/l1/O
+                         net (fo=2, routed)           0.681     9.049    A0/m62/b
+    SLICE_X106Y107       LUT3 (Prop_lut3_I2_O)        0.124     9.173 r  A0/m62/l1/O
+                         net (fo=2, routed)           0.926    10.099    A0/m71/b
+    SLICE_X104Y107       LUT3 (Prop_lut3_I2_O)        0.124    10.223 f  A0/m71/l1/O
+                         net (fo=2, routed)           0.814    11.036    A0/m82/b
+    SLICE_X104Y104       LUT3 (Prop_lut3_I2_O)        0.124    11.160 r  A0/m82/l1/O
+                         net (fo=2, routed)           0.982    12.142    A0/m92/a
+    SLICE_X101Y104       LUT3 (Prop_lut3_I1_O)        0.124    12.266 f  A0/m92/l1/O
+                         net (fo=2, routed)           0.805    13.071    A0/m102/a
+    SLICE_X101Y103       LUT3 (Prop_lut3_I1_O)        0.124    13.195 r  A0/m102/l1/O
+                         net (fo=2, routed)           0.672    13.867    A0/m111/b
+    SLICE_X100Y103       LUT3 (Prop_lut3_I2_O)        0.124    13.991 f  A0/m111/l1/O
+                         net (fo=2, routed)           0.882    14.873    A0/m122/b
+    SLICE_X101Y103       LUT3 (Prop_lut3_I2_O)        0.124    14.997 r  A0/m122/l1/O
+                         net (fo=2, routed)           1.002    15.999    A0/m132/a
+    SLICE_X104Y102       LUT3 (Prop_lut3_I1_O)        0.124    16.123 f  A0/m132/l1/O
+                         net (fo=2, routed)           0.811    16.934    A0/m141/b
+    SLICE_X104Y101       LUT3 (Prop_lut3_I2_O)        0.124    17.058 r  A0/m141/l1/O
+                         net (fo=2, routed)           0.682    17.740    A0/m151/a
+    SLICE_X104Y101       LUT3 (Prop_lut3_I1_O)        0.124    17.864 f  A0/m151/l1/O
+                         net (fo=2, routed)           1.006    18.869    A0/m161/a
+    SLICE_X101Y100       LUT3 (Prop_lut3_I1_O)        0.124    18.993 r  A0/m161/l1/O
+                         net (fo=2, routed)           0.681    19.674    A0/m172/b
+    SLICE_X101Y100       LUT3 (Prop_lut3_I2_O)        0.124    19.798 f  A0/m172/l1/O
+                         net (fo=2, routed)           0.850    20.647    A0/m181/b
+    SLICE_X102Y100       LUT3 (Prop_lut3_I2_O)        0.124    20.771 r  A0/m181/l1/O
+                         net (fo=2, routed)           0.967    21.738    A0/m192/b
+    SLICE_X104Y97        LUT3 (Prop_lut3_I2_O)        0.124    21.862 f  A0/m192/l1/O
+                         net (fo=2, routed)           0.667    22.529    A0/m201/b
+    SLICE_X105Y97        LUT3 (Prop_lut3_I2_O)        0.124    22.653 r  A0/m201/l1/O
+                         net (fo=2, routed)           1.057    23.710    A0/m211/a
+    SLICE_X106Y95        LUT3 (Prop_lut3_I1_O)        0.124    23.834 f  A0/m211/l1/O
+                         net (fo=2, routed)           0.679    24.514    A0/m221/a
+    SLICE_X106Y95        LUT3 (Prop_lut3_I1_O)        0.124    24.638 r  A0/m221/l1/O
+                         net (fo=2, routed)           0.595    25.233    A0/m231/a
+    SLICE_X108Y95        LUT3 (Prop_lut3_I1_O)        0.124    25.357 f  A0/m231/l1/O
+                         net (fo=2, routed)           0.701    26.058    A0/m242/b
+    SLICE_X108Y95        LUT3 (Prop_lut3_I2_O)        0.124    26.182 r  A0/m242/l1/O
+                         net (fo=2, routed)           0.810    26.992    A0/m252/a
+    SLICE_X107Y95        LUT3 (Prop_lut3_I1_O)        0.124    27.116 f  A0/m252/l1/O
+                         net (fo=2, routed)           0.809    27.925    A0/m262/a
+    SLICE_X106Y94        LUT3 (Prop_lut3_I1_O)        0.124    28.049 r  A0/m262/l1/O
+                         net (fo=2, routed)           0.806    28.855    A0/m271/b
+    SLICE_X106Y93        LUT3 (Prop_lut3_I2_O)        0.124    28.979 f  A0/m271/l1/O
+                         net (fo=2, routed)           0.798    29.777    A0/m281/a
+    SLICE_X109Y93        LUT3 (Prop_lut3_I1_O)        0.124    29.901 r  A0/m281/l1/O
+                         net (fo=2, routed)           0.681    30.582    A0/m292/b
+    SLICE_X109Y93        LUT3 (Prop_lut3_I2_O)        0.124    30.706 f  A0/m292/l1/O
+                         net (fo=2, routed)           0.833    31.539    A0/m301/b
+    SLICE_X112Y93        LUT3 (Prop_lut3_I2_O)        0.124    31.663 r  A0/m301/l1/O
+                         net (fo=2, routed)           0.701    32.364    A0/m312/b
+    SLICE_X112Y93        LUT3 (Prop_lut3_I2_O)        0.124    32.488 r  A0/m312/l1/O
+                         net (fo=2, routed)           0.962    33.449    A0/yb_31
+    SLICE_X112Y89        LUT3 (Prop_lut3_I1_O)        0.124    33.573 f  A0/response_INST_0_i_1/O
+                         net (fo=2, routed)           0.463    34.036    A0/response_INST_0_i_1_n_0
+    SLICE_X112Y89        LUT3 (Prop_lut3_I0_O)        0.124    34.160 r  A0/response_INST_0/O
+                         net (fo=1, routed)           3.862    38.022    Q_OBUF[0]
+    U14                  OBUF (Prop_obuf_I_O)         3.502    41.524 r  Q_OBUF[0]_inst/O
+                         net (fo=0)                   0.000    41.524    Q[0]
+    U14                                                               r  Q[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 C[0]
+                            (input port)
+  Destination:            Q[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        40.441ns  (logic 9.217ns (22.790%)  route 31.224ns (77.210%))
+  Logic Levels:           36  (IBUF=1 LUT3=34 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    G22                                               0.000     0.000 r  C[0] (IN)
+                         net (fo=0)                   0.000     0.000    C[0]
+    G22                  IBUF (Prop_ibuf_I_O)         1.469     1.469 r  C_IBUF[0]_inst/O
+                         net (fo=80, routed)          2.386     3.855    A4/m01/sel
+    SLICE_X108Y104       LUT3 (Prop_lut3_I0_O)        0.124     3.979 f  A4/m01/l1/O
+                         net (fo=2, routed)           0.682     4.661    A4/m11/a
+    SLICE_X108Y104       LUT3 (Prop_lut3_I1_O)        0.124     4.785 r  A4/m11/l1/O
+                         net (fo=2, routed)           0.819     5.604    A4/m22/b
+    SLICE_X108Y105       LUT3 (Prop_lut3_I2_O)        0.124     5.728 f  A4/m22/l1/O
+                         net (fo=2, routed)           0.888     6.616    A4/m31/b
+    SLICE_X109Y105       LUT3 (Prop_lut3_I2_O)        0.124     6.740 r  A4/m31/l1/O
+                         net (fo=2, routed)           0.681     7.421    A4/m42/b
+    SLICE_X109Y105       LUT3 (Prop_lut3_I2_O)        0.124     7.545 f  A4/m42/l1/O
+                         net (fo=2, routed)           0.863     8.407    A4/m51/b
+    SLICE_X106Y105       LUT3 (Prop_lut3_I2_O)        0.124     8.531 r  A4/m51/l1/O
+                         net (fo=2, routed)           0.681     9.212    A4/m62/b
+    SLICE_X106Y105       LUT3 (Prop_lut3_I2_O)        0.124     9.336 f  A4/m62/l1/O
+                         net (fo=2, routed)           1.029    10.364    A4/m71/b
+    SLICE_X105Y105       LUT3 (Prop_lut3_I2_O)        0.124    10.488 r  A4/m71/l1/O
+                         net (fo=2, routed)           0.681    11.169    A4/m82/b
+    SLICE_X105Y105       LUT3 (Prop_lut3_I2_O)        0.124    11.293 f  A4/m82/l1/O
+                         net (fo=2, routed)           0.889    12.182    A4/m91/b
+    SLICE_X104Y105       LUT3 (Prop_lut3_I2_O)        0.124    12.306 r  A4/m91/l1/O
+                         net (fo=2, routed)           0.816    13.123    A4/m101/a
+    SLICE_X103Y105       LUT3 (Prop_lut3_I1_O)        0.124    13.247 f  A4/m101/l1/O
+                         net (fo=2, routed)           0.676    13.922    A4/m111/a
+    SLICE_X103Y105       LUT3 (Prop_lut3_I1_O)        0.124    14.046 r  A4/m111/l1/O
+                         net (fo=2, routed)           0.816    14.862    A4/m121/a
+    SLICE_X103Y103       LUT3 (Prop_lut3_I1_O)        0.124    14.986 f  A4/m121/l1/O
+                         net (fo=2, routed)           0.681    15.667    A4/m132/b
+    SLICE_X103Y103       LUT3 (Prop_lut3_I2_O)        0.124    15.791 r  A4/m132/l1/O
+                         net (fo=2, routed)           0.889    16.680    A4/m141/b
+    SLICE_X102Y103       LUT3 (Prop_lut3_I2_O)        0.124    16.804 f  A4/m141/l1/O
+                         net (fo=2, routed)           0.701    17.505    A4/m152/b
+    SLICE_X102Y103       LUT3 (Prop_lut3_I2_O)        0.124    17.629 r  A4/m152/l1/O
+                         net (fo=2, routed)           0.820    18.449    A4/m162/a
+    SLICE_X102Y102       LUT3 (Prop_lut3_I1_O)        0.124    18.573 f  A4/m162/l1/O
+                         net (fo=2, routed)           0.811    19.384    A4/m171/b
+    SLICE_X102Y101       LUT3 (Prop_lut3_I2_O)        0.124    19.508 r  A4/m171/l1/O
+                         net (fo=2, routed)           0.701    20.209    A4/m182/b
+    SLICE_X102Y101       LUT3 (Prop_lut3_I2_O)        0.124    20.333 f  A4/m182/l1/O
+                         net (fo=2, routed)           0.817    21.150    A4/m192/a
+    SLICE_X103Y100       LUT3 (Prop_lut3_I1_O)        0.124    21.274 r  A4/m192/l1/O
+                         net (fo=2, routed)           1.060    22.333    A4/m201/b
+    SLICE_X106Y100       LUT3 (Prop_lut3_I2_O)        0.124    22.457 f  A4/m201/l1/O
+                         net (fo=2, routed)           0.576    23.034    A4/m211/a
+    SLICE_X109Y100       LUT3 (Prop_lut3_I1_O)        0.124    23.158 r  A4/m211/l1/O
+                         net (fo=2, routed)           0.676    23.834    A4/m221/a
+    SLICE_X109Y100       LUT3 (Prop_lut3_I1_O)        0.124    23.958 f  A4/m221/l1/O
+                         net (fo=2, routed)           0.832    24.789    A4/m232/b
+    SLICE_X110Y99        LUT3 (Prop_lut3_I2_O)        0.124    24.913 r  A4/m232/l1/O
+                         net (fo=2, routed)           0.817    25.730    A4/m242/a
+    SLICE_X111Y98        LUT3 (Prop_lut3_I1_O)        0.124    25.854 f  A4/m242/l1/O
+                         net (fo=2, routed)           0.805    26.659    A4/m252/a
+    SLICE_X111Y97        LUT3 (Prop_lut3_I1_O)        0.124    26.783 r  A4/m252/l1/O
+                         net (fo=2, routed)           0.721    27.504    A4/m262/a
+    SLICE_X110Y97        LUT3 (Prop_lut3_I1_O)        0.124    27.628 f  A4/m262/l1/O
+                         net (fo=2, routed)           0.871    28.500    A4/m272/a
+    SLICE_X110Y96        LUT3 (Prop_lut3_I1_O)        0.124    28.624 r  A4/m272/l1/O
+                         net (fo=2, routed)           0.787    29.410    A4/m282/a
+    SLICE_X110Y92        LUT3 (Prop_lut3_I1_O)        0.124    29.534 f  A4/m282/l1/O
+                         net (fo=2, routed)           0.887    30.421    A4/m291/b
+    SLICE_X111Y92        LUT3 (Prop_lut3_I2_O)        0.124    30.545 r  A4/m291/l1/O
+                         net (fo=2, routed)           0.815    31.361    A4/m301/a
+    SLICE_X111Y91        LUT3 (Prop_lut3_I1_O)        0.124    31.485 f  A4/m301/l1/O
+                         net (fo=2, routed)           0.595    32.080    A4/m311/a
+    SLICE_X112Y91        LUT3 (Prop_lut3_I1_O)        0.124    32.204 f  A4/m311/l1/O
+                         net (fo=2, routed)           0.840    33.043    A4/yt_31
+    SLICE_X112Y90        LUT3 (Prop_lut3_I2_O)        0.124    33.167 f  A4/response_INST_0_i_1/O
+                         net (fo=2, routed)           0.293    33.461    A4/response_INST_0_i_1_n_0
+    SLICE_X112Y90        LUT3 (Prop_lut3_I0_O)        0.124    33.585 r  A4/response_INST_0/O
+                         net (fo=1, routed)           3.325    36.910    Q_OBUF[4]
+    U22                  OBUF (Prop_obuf_I_O)         3.531    40.441 r  Q_OBUF[4]_inst/O
+                         net (fo=0)                   0.000    40.441    Q[4]
+    U22                                                               r  Q[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 C[0]
+                            (input port)
+  Destination:            Q[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        40.328ns  (logic 9.216ns (22.854%)  route 31.111ns (77.146%))
+  Logic Levels:           36  (IBUF=1 LUT3=34 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    G22                                               0.000     0.000 r  C[0] (IN)
+                         net (fo=0)                   0.000     0.000    C[0]
+    G22                  IBUF (Prop_ibuf_I_O)         1.469     1.469 r  C_IBUF[0]_inst/O
+                         net (fo=80, routed)          2.183     3.652    A2/m02/sel
+    SLICE_X110Y106       LUT3 (Prop_lut3_I0_O)        0.124     3.776 f  A2/m02/l1/O
+                         net (fo=2, routed)           0.807     4.584    A2/m11/b
+    SLICE_X110Y108       LUT3 (Prop_lut3_I2_O)        0.124     4.708 r  A2/m11/l1/O
+                         net (fo=2, routed)           0.681     5.388    A2/m22/b
+    SLICE_X110Y108       LUT3 (Prop_lut3_I2_O)        0.124     5.512 f  A2/m22/l1/O
+                         net (fo=2, routed)           0.896     6.409    A2/m31/b
+    SLICE_X108Y108       LUT3 (Prop_lut3_I2_O)        0.124     6.533 r  A2/m31/l1/O
+                         net (fo=2, routed)           0.690     7.222    A2/m42/b
+    SLICE_X108Y108       LUT3 (Prop_lut3_I2_O)        0.124     7.346 f  A2/m42/l1/O
+                         net (fo=2, routed)           1.016     8.362    A2/m51/b
+    SLICE_X106Y108       LUT3 (Prop_lut3_I2_O)        0.124     8.486 r  A2/m51/l1/O
+                         net (fo=2, routed)           1.071     9.558    A2/m61/a
+    SLICE_X102Y107       LUT3 (Prop_lut3_I1_O)        0.124     9.682 f  A2/m61/l1/O
+                         net (fo=2, routed)           0.618    10.299    A2/m72/b
+    SLICE_X102Y106       LUT3 (Prop_lut3_I2_O)        0.124    10.423 r  A2/m72/l1/O
+                         net (fo=2, routed)           0.888    11.311    A2/m81/b
+    SLICE_X103Y106       LUT3 (Prop_lut3_I2_O)        0.124    11.435 f  A2/m81/l1/O
+                         net (fo=2, routed)           0.681    12.116    A2/m92/b
+    SLICE_X103Y106       LUT3 (Prop_lut3_I2_O)        0.124    12.240 r  A2/m92/l1/O
+                         net (fo=2, routed)           0.881    13.121    A2/m102/a
+    SLICE_X102Y106       LUT3 (Prop_lut3_I1_O)        0.124    13.245 f  A2/m102/l1/O
+                         net (fo=2, routed)           0.811    14.056    A2/m111/b
+    SLICE_X102Y105       LUT3 (Prop_lut3_I2_O)        0.124    14.180 r  A2/m111/l1/O
+                         net (fo=2, routed)           0.701    14.881    A2/m122/b
+    SLICE_X102Y105       LUT3 (Prop_lut3_I2_O)        0.124    15.005 f  A2/m122/l1/O
+                         net (fo=2, routed)           0.820    15.825    A2/m132/a
+    SLICE_X102Y104       LUT3 (Prop_lut3_I1_O)        0.124    15.949 r  A2/m132/l1/O
+                         net (fo=2, routed)           0.827    16.776    A2/m142/a
+    SLICE_X105Y103       LUT3 (Prop_lut3_I1_O)        0.124    16.900 f  A2/m142/l1/O
+                         net (fo=2, routed)           0.899    17.799    A2/m151/b
+    SLICE_X106Y103       LUT3 (Prop_lut3_I2_O)        0.124    17.923 r  A2/m151/l1/O
+                         net (fo=2, routed)           0.681    18.604    A2/m162/b
+    SLICE_X106Y103       LUT3 (Prop_lut3_I2_O)        0.124    18.728 f  A2/m162/l1/O
+                         net (fo=2, routed)           0.837    19.565    A2/m171/b
+    SLICE_X108Y102       LUT3 (Prop_lut3_I2_O)        0.124    19.689 r  A2/m171/l1/O
+                         net (fo=2, routed)           0.701    20.390    A2/m182/b
+    SLICE_X108Y102       LUT3 (Prop_lut3_I2_O)        0.124    20.514 f  A2/m182/l1/O
+                         net (fo=2, routed)           0.846    21.360    A2/m191/b
+    SLICE_X110Y101       LUT3 (Prop_lut3_I2_O)        0.124    21.484 r  A2/m191/l1/O
+                         net (fo=2, routed)           0.679    22.164    A2/m201/a
+    SLICE_X110Y101       LUT3 (Prop_lut3_I1_O)        0.124    22.288 f  A2/m201/l1/O
+                         net (fo=2, routed)           0.667    22.955    A2/m212/b
+    SLICE_X112Y101       LUT3 (Prop_lut3_I2_O)        0.124    23.079 r  A2/m212/l1/O
+                         net (fo=2, routed)           0.888    23.967    A2/m221/b
+    SLICE_X113Y101       LUT3 (Prop_lut3_I2_O)        0.124    24.091 f  A2/m221/l1/O
+                         net (fo=2, routed)           0.675    24.766    A2/m231/a
+    SLICE_X112Y99        LUT3 (Prop_lut3_I1_O)        0.124    24.890 r  A2/m231/l1/O
+                         net (fo=2, routed)           0.672    25.561    A2/m241/a
+    SLICE_X112Y98        LUT3 (Prop_lut3_I1_O)        0.124    25.685 f  A2/m241/l1/O
+                         net (fo=2, routed)           0.701    26.386    A2/m252/b
+    SLICE_X112Y98        LUT3 (Prop_lut3_I2_O)        0.124    26.510 r  A2/m252/l1/O
+                         net (fo=2, routed)           0.830    27.340    A2/m261/b
+    SLICE_X112Y97        LUT3 (Prop_lut3_I2_O)        0.124    27.464 f  A2/m261/l1/O
+                         net (fo=2, routed)           0.701    28.165    A2/m272/b
+    SLICE_X112Y97        LUT3 (Prop_lut3_I2_O)        0.124    28.289 r  A2/m272/l1/O
+                         net (fo=2, routed)           0.830    29.119    A2/m281/b
+    SLICE_X112Y96        LUT3 (Prop_lut3_I2_O)        0.124    29.243 f  A2/m281/l1/O
+                         net (fo=2, routed)           0.701    29.944    A2/m292/b
+    SLICE_X112Y96        LUT3 (Prop_lut3_I2_O)        0.124    30.068 r  A2/m292/l1/O
+                         net (fo=2, routed)           1.029    31.097    A2/m301/b
+    SLICE_X112Y95        LUT3 (Prop_lut3_I2_O)        0.124    31.221 f  A2/m301/l1/O
+                         net (fo=2, routed)           0.672    31.892    A2/m311/a
+    SLICE_X112Y94        LUT3 (Prop_lut3_I1_O)        0.124    32.016 f  A2/m311/l1/O
+                         net (fo=2, routed)           0.701    32.717    A2/yt_31
+    SLICE_X112Y94        LUT3 (Prop_lut3_I2_O)        0.124    32.841 f  A2/response_INST_0_i_1/O
+                         net (fo=2, routed)           0.293    33.134    A2/response_INST_0_i_1_n_0
+    SLICE_X112Y94        LUT3 (Prop_lut3_I0_O)        0.124    33.258 r  A2/response_INST_0/O
+                         net (fo=1, routed)           3.538    36.796    Q_OBUF[2]
+    W22                  OBUF (Prop_obuf_I_O)         3.531    40.328 r  Q_OBUF[2]_inst/O
+                         net (fo=0)                   0.000    40.328    Q[2]
+    W22                                                               r  Q[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 s
+                            (input port)
+  Destination:            Q[6]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        39.376ns  (logic 9.225ns (23.429%)  route 30.151ns (76.571%))
+  Logic Levels:           36  (IBUF=1 LUT3=34 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    F22                                               0.000     0.000 f  s (IN)
+                         net (fo=0)                   0.000     0.000    s
+    F22                  IBUF (Prop_ibuf_I_O)         1.487     1.487 f  s_IBUF_inst/O
+                         net (fo=32, routed)          2.078     3.565    A6/m01/a
+    SLICE_X113Y105       LUT3 (Prop_lut3_I1_O)        0.124     3.689 f  A6/m01/l1/O
+                         net (fo=2, routed)           0.676     4.365    A6/m11/a
+    SLICE_X113Y105       LUT3 (Prop_lut3_I1_O)        0.124     4.489 r  A6/m11/l1/O
+                         net (fo=2, routed)           0.806     5.295    A6/m21/a
+    SLICE_X113Y104       LUT3 (Prop_lut3_I1_O)        0.124     5.419 f  A6/m21/l1/O
+                         net (fo=2, routed)           0.798     6.217    A6/m31/a
+    SLICE_X111Y104       LUT3 (Prop_lut3_I1_O)        0.124     6.341 r  A6/m31/l1/O
+                         net (fo=2, routed)           0.676     7.017    A6/m41/a
+    SLICE_X111Y104       LUT3 (Prop_lut3_I1_O)        0.124     7.141 f  A6/m41/l1/O
+                         net (fo=2, routed)           0.814     7.955    A6/m51/a
+    SLICE_X109Y104       LUT3 (Prop_lut3_I1_O)        0.124     8.079 r  A6/m51/l1/O
+                         net (fo=2, routed)           0.681     8.760    A6/m62/b
+    SLICE_X109Y104       LUT3 (Prop_lut3_I2_O)        0.124     8.884 f  A6/m62/l1/O
+                         net (fo=2, routed)           0.941     9.825    A6/m71/b
+    SLICE_X106Y104       LUT3 (Prop_lut3_I2_O)        0.124     9.949 r  A6/m71/l1/O
+                         net (fo=2, routed)           0.681    10.630    A6/m82/b
+    SLICE_X106Y104       LUT3 (Prop_lut3_I2_O)        0.124    10.754 f  A6/m82/l1/O
+                         net (fo=2, routed)           0.887    11.641    A6/m91/b
+    SLICE_X107Y104       LUT3 (Prop_lut3_I2_O)        0.124    11.765 r  A6/m91/l1/O
+                         net (fo=2, routed)           0.820    12.585    A6/m102/b
+    SLICE_X107Y103       LUT3 (Prop_lut3_I2_O)        0.124    12.709 f  A6/m102/l1/O
+                         net (fo=2, routed)           0.926    13.635    A6/m111/b
+    SLICE_X104Y103       LUT3 (Prop_lut3_I2_O)        0.124    13.759 r  A6/m111/l1/O
+                         net (fo=2, routed)           0.701    14.460    A6/m122/b
+    SLICE_X104Y103       LUT3 (Prop_lut3_I2_O)        0.124    14.584 f  A6/m122/l1/O
+                         net (fo=2, routed)           0.676    15.260    A6/m132/a
+    SLICE_X104Y102       LUT3 (Prop_lut3_I1_O)        0.124    15.384 r  A6/m132/l1/O
+                         net (fo=2, routed)           0.888    16.272    A6/m141/b
+    SLICE_X105Y102       LUT3 (Prop_lut3_I2_O)        0.124    16.396 f  A6/m141/l1/O
+                         net (fo=2, routed)           0.642    17.038    A6/m151/a
+    SLICE_X105Y101       LUT3 (Prop_lut3_I1_O)        0.124    17.162 r  A6/m151/l1/O
+                         net (fo=2, routed)           0.681    17.843    A6/m162/b
+    SLICE_X105Y101       LUT3 (Prop_lut3_I2_O)        0.124    17.967 f  A6/m162/l1/O
+                         net (fo=2, routed)           0.815    18.782    A6/m171/b
+    SLICE_X105Y100       LUT3 (Prop_lut3_I2_O)        0.124    18.906 r  A6/m171/l1/O
+                         net (fo=2, routed)           0.681    19.586    A6/m182/b
+    SLICE_X105Y100       LUT3 (Prop_lut3_I2_O)        0.124    19.710 f  A6/m182/l1/O
+                         net (fo=2, routed)           0.804    20.515    A6/m191/b
+    SLICE_X107Y100       LUT3 (Prop_lut3_I2_O)        0.124    20.639 r  A6/m191/l1/O
+                         net (fo=2, routed)           0.816    21.455    A6/m201/a
+    SLICE_X107Y101       LUT3 (Prop_lut3_I1_O)        0.124    21.579 f  A6/m201/l1/O
+                         net (fo=2, routed)           0.654    22.233    A6/m212/b
+    SLICE_X107Y100       LUT3 (Prop_lut3_I2_O)        0.124    22.357 r  A6/m212/l1/O
+                         net (fo=2, routed)           0.787    23.145    A6/m222/a
+    SLICE_X107Y99        LUT3 (Prop_lut3_I1_O)        0.124    23.269 f  A6/m222/l1/O
+                         net (fo=2, routed)           0.978    24.247    A6/m231/b
+    SLICE_X108Y97        LUT3 (Prop_lut3_I2_O)        0.124    24.371 r  A6/m231/l1/O
+                         net (fo=2, routed)           0.682    25.053    A6/m241/a
+    SLICE_X108Y97        LUT3 (Prop_lut3_I1_O)        0.124    25.177 f  A6/m241/l1/O
+                         net (fo=2, routed)           0.716    25.892    A6/m251/a
+    SLICE_X109Y97        LUT3 (Prop_lut3_I1_O)        0.124    26.016 r  A6/m251/l1/O
+                         net (fo=2, routed)           0.814    26.830    A6/m261/a
+    SLICE_X111Y97        LUT3 (Prop_lut3_I1_O)        0.124    26.954 f  A6/m261/l1/O
+                         net (fo=2, routed)           0.659    27.614    A6/m271/a
+    SLICE_X111Y96        LUT3 (Prop_lut3_I1_O)        0.124    27.738 r  A6/m271/l1/O
+                         net (fo=2, routed)           0.814    28.552    A6/m281/a
+    SLICE_X109Y96        LUT3 (Prop_lut3_I1_O)        0.124    28.676 f  A6/m281/l1/O
+                         net (fo=2, routed)           0.968    29.644    A6/m291/a
+    SLICE_X110Y94        LUT3 (Prop_lut3_I1_O)        0.124    29.768 r  A6/m291/l1/O
+                         net (fo=2, routed)           0.681    30.449    A6/m302/b
+    SLICE_X110Y94        LUT3 (Prop_lut3_I2_O)        0.124    30.573 f  A6/m302/l1/O
+                         net (fo=2, routed)           0.652    31.225    A6/m311/b
+    SLICE_X110Y93        LUT3 (Prop_lut3_I2_O)        0.124    31.349 f  A6/m311/l1/O
+                         net (fo=2, routed)           0.808    32.157    A6/yt_31
+    SLICE_X111Y92        LUT3 (Prop_lut3_I2_O)        0.124    32.281 f  A6/response_INST_0_i_1/O
+                         net (fo=2, routed)           0.274    32.555    A6/response_INST_0_i_1_n_0
+    SLICE_X111Y92        LUT3 (Prop_lut3_I0_O)        0.124    32.679 r  A6/response_INST_0/O
+                         net (fo=1, routed)           3.174    35.853    Q_OBUF[6]
+    T22                  OBUF (Prop_obuf_I_O)         3.522    39.376 r  Q_OBUF[6]_inst/O
+                         net (fo=0)                   0.000    39.376    Q[6]
+    T22                                                               r  Q[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 s
+                            (input port)
+  Destination:            Q[7]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        39.324ns  (logic 9.216ns (23.437%)  route 30.108ns (76.563%))
+  Logic Levels:           36  (IBUF=1 LUT3=34 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    F22                                               0.000     0.000 r  s (IN)
+                         net (fo=0)                   0.000     0.000    s
+    F22                  IBUF (Prop_ibuf_I_O)         1.487     1.487 r  s_IBUF_inst/O
+                         net (fo=32, routed)          1.796     3.282    A7/m01/a
+    SLICE_X110Y103       LUT3 (Prop_lut3_I1_O)        0.124     3.406 r  A7/m01/l1/O
+                         net (fo=2, routed)           0.681     4.087    A7/m12/b
+    SLICE_X110Y103       LUT3 (Prop_lut3_I2_O)        0.124     4.211 f  A7/m12/l1/O
+                         net (fo=2, routed)           0.826     5.037    A7/m22/a
+    SLICE_X109Y103       LUT3 (Prop_lut3_I1_O)        0.124     5.161 r  A7/m22/l1/O
+                         net (fo=2, routed)           0.672     5.833    A7/m31/b
+    SLICE_X108Y103       LUT3 (Prop_lut3_I2_O)        0.124     5.957 f  A7/m31/l1/O
+                         net (fo=2, routed)           0.701     6.658    A7/m42/b
+    SLICE_X108Y103       LUT3 (Prop_lut3_I2_O)        0.124     6.782 r  A7/m42/l1/O
+                         net (fo=2, routed)           0.831     7.613    A7/m51/b
+    SLICE_X106Y102       LUT3 (Prop_lut3_I2_O)        0.124     7.737 f  A7/m51/l1/O
+                         net (fo=2, routed)           0.681     8.417    A7/m62/b
+    SLICE_X106Y102       LUT3 (Prop_lut3_I2_O)        0.124     8.541 r  A7/m62/l1/O
+                         net (fo=2, routed)           0.741     9.282    A7/m72/a
+    SLICE_X105Y102       LUT3 (Prop_lut3_I1_O)        0.124     9.406 f  A7/m72/l1/O
+                         net (fo=2, routed)           0.789    10.195    A7/m82/a
+    SLICE_X105Y99        LUT3 (Prop_lut3_I1_O)        0.124    10.319 r  A7/m82/l1/O
+                         net (fo=2, routed)           0.817    11.136    A7/m92/a
+    SLICE_X103Y99        LUT3 (Prop_lut3_I1_O)        0.124    11.260 f  A7/m92/l1/O
+                         net (fo=2, routed)           0.815    12.075    A7/m101/b
+    SLICE_X103Y98        LUT3 (Prop_lut3_I2_O)        0.124    12.199 r  A7/m101/l1/O
+                         net (fo=2, routed)           0.676    12.875    A7/m111/a
+    SLICE_X103Y98        LUT3 (Prop_lut3_I1_O)        0.124    12.999 f  A7/m111/l1/O
+                         net (fo=2, routed)           0.734    13.733    A7/m121/a
+    SLICE_X103Y97        LUT3 (Prop_lut3_I1_O)        0.124    13.857 r  A7/m121/l1/O
+                         net (fo=2, routed)           0.681    14.538    A7/m132/b
+    SLICE_X103Y97        LUT3 (Prop_lut3_I2_O)        0.124    14.662 f  A7/m132/l1/O
+                         net (fo=2, routed)           0.678    15.340    A7/m142/a
+    SLICE_X102Y99        LUT3 (Prop_lut3_I1_O)        0.124    15.464 r  A7/m142/l1/O
+                         net (fo=2, routed)           0.798    16.263    A7/m152/a
+    SLICE_X103Y100       LUT3 (Prop_lut3_I1_O)        0.124    16.387 f  A7/m152/l1/O
+                         net (fo=2, routed)           0.815    17.202    A7/m161/b
+    SLICE_X103Y101       LUT3 (Prop_lut3_I2_O)        0.124    17.326 r  A7/m161/l1/O
+                         net (fo=2, routed)           0.676    18.001    A7/m171/a
+    SLICE_X103Y101       LUT3 (Prop_lut3_I1_O)        0.124    18.125 f  A7/m171/l1/O
+                         net (fo=2, routed)           0.817    18.942    A7/m181/a
+    SLICE_X103Y99        LUT3 (Prop_lut3_I1_O)        0.124    19.066 r  A7/m181/l1/O
+                         net (fo=2, routed)           0.814    19.881    A7/m191/a
+    SLICE_X105Y99        LUT3 (Prop_lut3_I1_O)        0.124    20.005 f  A7/m191/l1/O
+                         net (fo=2, routed)           0.642    20.647    A7/m201/a
+    SLICE_X105Y98        LUT3 (Prop_lut3_I1_O)        0.124    20.771 r  A7/m201/l1/O
+                         net (fo=2, routed)           0.808    21.579    A7/m212/b
+    SLICE_X105Y97        LUT3 (Prop_lut3_I2_O)        0.124    21.703 f  A7/m212/l1/O
+                         net (fo=2, routed)           0.912    22.615    A7/m221/b
+    SLICE_X106Y97        LUT3 (Prop_lut3_I2_O)        0.124    22.739 r  A7/m221/l1/O
+                         net (fo=2, routed)           0.681    23.420    A7/m232/b
+    SLICE_X106Y97        LUT3 (Prop_lut3_I2_O)        0.124    23.544 f  A7/m232/l1/O
+                         net (fo=2, routed)           0.887    24.431    A7/m241/b
+    SLICE_X107Y97        LUT3 (Prop_lut3_I2_O)        0.124    24.555 r  A7/m241/l1/O
+                         net (fo=2, routed)           0.821    25.376    A7/m251/a
+    SLICE_X108Y96        LUT3 (Prop_lut3_I1_O)        0.124    25.500 f  A7/m251/l1/O
+                         net (fo=2, routed)           0.882    26.382    A7/m262/b
+    SLICE_X109Y96        LUT3 (Prop_lut3_I2_O)        0.124    26.506 r  A7/m262/l1/O
+                         net (fo=2, routed)           0.817    27.323    A7/m272/a
+    SLICE_X109Y95        LUT3 (Prop_lut3_I1_O)        0.124    27.447 f  A7/m272/l1/O
+                         net (fo=2, routed)           0.805    28.252    A7/m282/a
+    SLICE_X109Y94        LUT3 (Prop_lut3_I1_O)        0.124    28.376 r  A7/m282/l1/O
+                         net (fo=2, routed)           0.672    29.048    A7/m291/b
+    SLICE_X108Y94        LUT3 (Prop_lut3_I2_O)        0.124    29.172 f  A7/m291/l1/O
+                         net (fo=2, routed)           0.880    30.051    A7/m301/a
+    SLICE_X109Y94        LUT3 (Prop_lut3_I1_O)        0.124    30.175 r  A7/m301/l1/O
+                         net (fo=2, routed)           0.811    30.986    A7/m312/b
+    SLICE_X111Y94        LUT3 (Prop_lut3_I2_O)        0.124    31.110 r  A7/m312/l1/O
+                         net (fo=2, routed)           0.799    31.909    A7/yb_31
+    SLICE_X113Y94        LUT3 (Prop_lut3_I1_O)        0.124    32.033 f  A7/response_INST_0_i_1/O
+                         net (fo=2, routed)           0.274    32.307    A7/response_INST_0_i_1_n_0
+    SLICE_X113Y94        LUT3 (Prop_lut3_I0_O)        0.124    32.431 r  A7/response_INST_0/O
+                         net (fo=1, routed)           3.380    35.811    Q_OBUF[7]
+    T21                  OBUF (Prop_obuf_I_O)         3.514    39.324 r  Q_OBUF[7]_inst/O
+                         net (fo=0)                   0.000    39.324    Q[7]
+    T21                                                               r  Q[7] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 s
+                            (input port)
+  Destination:            Q[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        39.221ns  (logic 9.215ns (23.495%)  route 30.006ns (76.505%))
+  Logic Levels:           36  (IBUF=1 LUT3=34 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    F22                                               0.000     0.000 r  s (IN)
+                         net (fo=0)                   0.000     0.000    s
+    F22                  IBUF (Prop_ibuf_I_O)         1.487     1.487 r  s_IBUF_inst/O
+                         net (fo=32, routed)          1.428     2.915    A1/m01/a
+    SLICE_X113Y102       LUT3 (Prop_lut3_I1_O)        0.124     3.039 r  A1/m01/l1/O
+                         net (fo=2, routed)           0.681     3.719    A1/m12/b
+    SLICE_X113Y102       LUT3 (Prop_lut3_I2_O)        0.124     3.843 f  A1/m12/l1/O
+                         net (fo=2, routed)           0.889     4.733    A1/m21/b
+    SLICE_X112Y102       LUT3 (Prop_lut3_I2_O)        0.124     4.857 r  A1/m21/l1/O
+                         net (fo=2, routed)           0.701     5.558    A1/m32/b
+    SLICE_X112Y102       LUT3 (Prop_lut3_I2_O)        0.124     5.682 f  A1/m32/l1/O
+                         net (fo=2, routed)           0.830     6.512    A1/m41/b
+    SLICE_X112Y101       LUT3 (Prop_lut3_I2_O)        0.124     6.636 r  A1/m41/l1/O
+                         net (fo=2, routed)           0.799     7.434    A1/m52/b
+    SLICE_X111Y101       LUT3 (Prop_lut3_I2_O)        0.124     7.558 f  A1/m52/l1/O
+                         net (fo=2, routed)           0.809     8.367    A1/m62/a
+    SLICE_X110Y100       LUT3 (Prop_lut3_I1_O)        0.124     8.491 r  A1/m62/l1/O
+                         net (fo=2, routed)           0.679     9.170    A1/m71/b
+    SLICE_X108Y100       LUT3 (Prop_lut3_I2_O)        0.124     9.294 f  A1/m71/l1/O
+                         net (fo=2, routed)           0.820    10.114    A1/m81/a
+    SLICE_X106Y99        LUT3 (Prop_lut3_I1_O)        0.124    10.238 r  A1/m81/l1/O
+                         net (fo=2, routed)           0.985    11.223    A1/m92/b
+    SLICE_X104Y99        LUT3 (Prop_lut3_I2_O)        0.124    11.347 f  A1/m92/l1/O
+                         net (fo=2, routed)           0.691    12.038    A1/m101/b
+    SLICE_X104Y99        LUT3 (Prop_lut3_I2_O)        0.124    12.162 r  A1/m101/l1/O
+                         net (fo=2, routed)           0.821    12.983    A1/m111/a
+    SLICE_X102Y99        LUT3 (Prop_lut3_I1_O)        0.124    13.107 f  A1/m111/l1/O
+                         net (fo=2, routed)           0.672    13.778    A1/m121/a
+    SLICE_X102Y98        LUT3 (Prop_lut3_I1_O)        0.124    13.902 r  A1/m121/l1/O
+                         net (fo=2, routed)           0.701    14.603    A1/m132/b
+    SLICE_X102Y98        LUT3 (Prop_lut3_I2_O)        0.124    14.727 f  A1/m132/l1/O
+                         net (fo=2, routed)           1.021    15.748    A1/m142/a
+    SLICE_X102Y97        LUT3 (Prop_lut3_I1_O)        0.124    15.872 r  A1/m142/l1/O
+                         net (fo=2, routed)           0.820    16.692    A1/m151/b
+    SLICE_X104Y95        LUT3 (Prop_lut3_I2_O)        0.124    16.816 f  A1/m151/l1/O
+                         net (fo=2, routed)           0.701    17.517    A1/m162/b
+    SLICE_X104Y95        LUT3 (Prop_lut3_I2_O)        0.124    17.641 r  A1/m162/l1/O
+                         net (fo=2, routed)           0.888    18.529    A1/m171/b
+    SLICE_X105Y95        LUT3 (Prop_lut3_I2_O)        0.124    18.653 f  A1/m171/l1/O
+                         net (fo=2, routed)           0.681    19.334    A1/m182/b
+    SLICE_X105Y95        LUT3 (Prop_lut3_I2_O)        0.124    19.458 r  A1/m182/l1/O
+                         net (fo=2, routed)           0.815    20.273    A1/m191/b
+    SLICE_X105Y94        LUT3 (Prop_lut3_I2_O)        0.124    20.397 f  A1/m191/l1/O
+                         net (fo=2, routed)           0.913    21.310    A1/m202/b
+    SLICE_X106Y94        LUT3 (Prop_lut3_I2_O)        0.124    21.434 r  A1/m202/l1/O
+                         net (fo=2, routed)           0.886    22.320    A1/m212/a
+    SLICE_X107Y94        LUT3 (Prop_lut3_I1_O)        0.124    22.444 f  A1/m212/l1/O
+                         net (fo=2, routed)           0.661    23.105    A1/m221/b
+    SLICE_X106Y93        LUT3 (Prop_lut3_I2_O)        0.124    23.229 r  A1/m221/l1/O
+                         net (fo=2, routed)           0.715    23.944    A1/m231/a
+    SLICE_X107Y93        LUT3 (Prop_lut3_I1_O)        0.124    24.068 f  A1/m231/l1/O
+                         net (fo=2, routed)           0.676    24.744    A1/m241/a
+    SLICE_X107Y93        LUT3 (Prop_lut3_I1_O)        0.124    24.868 r  A1/m241/l1/O
+                         net (fo=2, routed)           0.804    25.672    A1/m251/a
+    SLICE_X108Y93        LUT3 (Prop_lut3_I1_O)        0.124    25.796 f  A1/m251/l1/O
+                         net (fo=2, routed)           0.701    26.497    A1/m262/b
+    SLICE_X108Y93        LUT3 (Prop_lut3_I2_O)        0.124    26.621 r  A1/m262/l1/O
+                         net (fo=2, routed)           0.831    27.452    A1/m271/b
+    SLICE_X106Y92        LUT3 (Prop_lut3_I2_O)        0.124    27.576 f  A1/m271/l1/O
+                         net (fo=2, routed)           0.681    28.256    A1/m282/b
+    SLICE_X106Y92        LUT3 (Prop_lut3_I2_O)        0.124    28.380 r  A1/m282/l1/O
+                         net (fo=2, routed)           0.824    29.205    A1/m291/b
+    SLICE_X106Y91        LUT3 (Prop_lut3_I2_O)        0.124    29.329 f  A1/m291/l1/O
+                         net (fo=2, routed)           0.681    30.009    A1/m302/b
+    SLICE_X106Y91        LUT3 (Prop_lut3_I2_O)        0.124    30.133 r  A1/m302/l1/O
+                         net (fo=2, routed)           0.820    30.954    A1/m312/a
+    SLICE_X110Y91        LUT3 (Prop_lut3_I1_O)        0.124    31.078 r  A1/m312/l1/O
+                         net (fo=2, routed)           0.809    31.886    A1/yb_31
+    SLICE_X110Y90        LUT3 (Prop_lut3_I1_O)        0.124    32.010 f  A1/response_INST_0_i_1/O
+                         net (fo=2, routed)           0.455    32.465    A1/response_INST_0_i_1_n_0
+    SLICE_X110Y90        LUT3 (Prop_lut3_I0_O)        0.124    32.589 r  A1/response_INST_0/O
+                         net (fo=1, routed)           3.120    35.709    Q_OBUF[1]
+    U19                  OBUF (Prop_obuf_I_O)         3.512    39.221 r  Q_OBUF[1]_inst/O
+                         net (fo=0)                   0.000    39.221    Q[1]
+    U19                                                               r  Q[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 s
+                            (input port)
+  Destination:            Q[5]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        38.945ns  (logic 9.233ns (23.707%)  route 29.713ns (76.293%))
+  Logic Levels:           36  (IBUF=1 LUT3=34 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    F22                                               0.000     0.000 f  s (IN)
+                         net (fo=0)                   0.000     0.000    s
+    F22                  IBUF (Prop_ibuf_I_O)         1.487     1.487 f  s_IBUF_inst/O
+                         net (fo=32, routed)          2.093     3.580    A5/m01/a
+    SLICE_X112Y105       LUT3 (Prop_lut3_I1_O)        0.124     3.704 f  A5/m01/l1/O
+                         net (fo=2, routed)           0.682     4.386    A5/m11/a
+    SLICE_X112Y105       LUT3 (Prop_lut3_I1_O)        0.124     4.510 r  A5/m11/l1/O
+                         net (fo=2, routed)           0.670     5.180    A5/m21/a
+    SLICE_X112Y106       LUT3 (Prop_lut3_I1_O)        0.124     5.304 f  A5/m21/l1/O
+                         net (fo=2, routed)           0.682     5.985    A5/m31/a
+    SLICE_X112Y106       LUT3 (Prop_lut3_I1_O)        0.124     6.109 r  A5/m31/l1/O
+                         net (fo=2, routed)           0.798     6.907    A5/m41/a
+    SLICE_X111Y106       LUT3 (Prop_lut3_I1_O)        0.124     7.031 f  A5/m41/l1/O
+                         net (fo=2, routed)           0.890     7.922    A5/m51/a
+    SLICE_X110Y106       LUT3 (Prop_lut3_I1_O)        0.124     8.046 r  A5/m51/l1/O
+                         net (fo=2, routed)           0.647     8.693    A5/m62/b
+    SLICE_X110Y107       LUT3 (Prop_lut3_I2_O)        0.124     8.817 f  A5/m62/l1/O
+                         net (fo=2, routed)           0.819     9.636    A5/m71/b
+    SLICE_X108Y107       LUT3 (Prop_lut3_I2_O)        0.124     9.760 r  A5/m71/l1/O
+                         net (fo=2, routed)           0.701    10.461    A5/m82/b
+    SLICE_X108Y107       LUT3 (Prop_lut3_I2_O)        0.124    10.585 f  A5/m82/l1/O
+                         net (fo=2, routed)           0.801    11.386    A5/m92/a
+    SLICE_X107Y107       LUT3 (Prop_lut3_I1_O)        0.124    11.510 r  A5/m92/l1/O
+                         net (fo=2, routed)           0.676    12.186    A5/m101/b
+    SLICE_X107Y107       LUT3 (Prop_lut3_I2_O)        0.124    12.310 f  A5/m101/l1/O
+                         net (fo=2, routed)           0.822    13.132    A5/m111/a
+    SLICE_X104Y107       LUT3 (Prop_lut3_I1_O)        0.124    13.256 r  A5/m111/l1/O
+                         net (fo=2, routed)           0.819    14.076    A5/m122/b
+    SLICE_X104Y105       LUT3 (Prop_lut3_I2_O)        0.124    14.200 f  A5/m122/l1/O
+                         net (fo=2, routed)           0.667    14.867    A5/m131/b
+    SLICE_X104Y104       LUT3 (Prop_lut3_I2_O)        0.124    14.991 r  A5/m131/l1/O
+                         net (fo=2, routed)           0.716    15.706    A5/m141/a
+    SLICE_X105Y104       LUT3 (Prop_lut3_I1_O)        0.124    15.830 f  A5/m141/l1/O
+                         net (fo=2, routed)           0.820    16.651    A5/m152/b
+    SLICE_X105Y103       LUT3 (Prop_lut3_I2_O)        0.124    16.775 r  A5/m152/l1/O
+                         net (fo=2, routed)           0.905    17.679    A5/m162/a
+    SLICE_X107Y103       LUT3 (Prop_lut3_I1_O)        0.124    17.803 f  A5/m162/l1/O
+                         net (fo=2, routed)           0.805    18.608    A5/m172/a
+    SLICE_X107Y102       LUT3 (Prop_lut3_I1_O)        0.124    18.732 r  A5/m172/l1/O
+                         net (fo=2, routed)           0.571    19.303    A5/m181/b
+    SLICE_X109Y102       LUT3 (Prop_lut3_I2_O)        0.124    19.427 f  A5/m181/l1/O
+                         net (fo=2, routed)           0.605    20.033    A5/m192/b
+    SLICE_X111Y101       LUT3 (Prop_lut3_I2_O)        0.124    20.157 r  A5/m192/l1/O
+                         net (fo=2, routed)           0.815    20.972    A5/m201/b
+    SLICE_X111Y100       LUT3 (Prop_lut3_I2_O)        0.124    21.096 f  A5/m201/l1/O
+                         net (fo=2, routed)           0.820    21.916    A5/m211/a
+    SLICE_X111Y98        LUT3 (Prop_lut3_I1_O)        0.124    22.040 r  A5/m211/l1/O
+                         net (fo=2, routed)           0.816    22.856    A5/m221/a
+    SLICE_X111Y96        LUT3 (Prop_lut3_I1_O)        0.124    22.980 f  A5/m221/l1/O
+                         net (fo=2, routed)           0.798    23.778    A5/m231/a
+    SLICE_X113Y96        LUT3 (Prop_lut3_I1_O)        0.124    23.902 r  A5/m231/l1/O
+                         net (fo=2, routed)           0.681    24.583    A5/m242/b
+    SLICE_X113Y96        LUT3 (Prop_lut3_I2_O)        0.124    24.707 f  A5/m242/l1/O
+                         net (fo=2, routed)           0.815    25.522    A5/m251/b
+    SLICE_X113Y95        LUT3 (Prop_lut3_I2_O)        0.124    25.646 r  A5/m251/l1/O
+                         net (fo=2, routed)           0.681    26.326    A5/m262/b
+    SLICE_X113Y95        LUT3 (Prop_lut3_I2_O)        0.124    26.450 f  A5/m262/l1/O
+                         net (fo=2, routed)           0.817    27.268    A5/m272/a
+    SLICE_X113Y94        LUT3 (Prop_lut3_I1_O)        0.124    27.392 r  A5/m272/l1/O
+                         net (fo=2, routed)           0.583    27.975    A5/m281/b
+    SLICE_X113Y93        LUT3 (Prop_lut3_I2_O)        0.124    28.099 f  A5/m281/l1/O
+                         net (fo=2, routed)           0.676    28.774    A5/m291/a
+    SLICE_X113Y93        LUT3 (Prop_lut3_I1_O)        0.124    28.898 r  A5/m291/l1/O
+                         net (fo=2, routed)           0.962    29.860    A5/m301/a
+    SLICE_X112Y92        LUT3 (Prop_lut3_I1_O)        0.124    29.984 f  A5/m301/l1/O
+                         net (fo=2, routed)           0.682    30.666    A5/m311/a
+    SLICE_X112Y92        LUT3 (Prop_lut3_I1_O)        0.124    30.790 f  A5/m311/l1/O
+                         net (fo=2, routed)           0.819    31.609    A5/yt_31
+    SLICE_X112Y91        LUT3 (Prop_lut3_I2_O)        0.124    31.733 f  A5/response_INST_0_i_1/O
+                         net (fo=2, routed)           0.293    32.026    A5/response_INST_0_i_1_n_0
+    SLICE_X112Y91        LUT3 (Prop_lut3_I0_O)        0.124    32.150 r  A5/response_INST_0/O
+                         net (fo=1, routed)           3.265    35.416    Q_OBUF[5]
+    U21                  OBUF (Prop_obuf_I_O)         3.530    38.945 r  Q_OBUF[5]_inst/O
+                         net (fo=0)                   0.000    38.945    Q[5]
+    U21                                                               r  Q[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 C[0]
+                            (input port)
+  Destination:            Q[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        38.928ns  (logic 9.222ns (23.691%)  route 29.705ns (76.309%))
+  Logic Levels:           36  (IBUF=1 LUT3=34 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    G22                                               0.000     0.000 r  C[0] (IN)
+                         net (fo=0)                   0.000     0.000    C[0]
+    G22                  IBUF (Prop_ibuf_I_O)         1.469     1.469 r  C_IBUF[0]_inst/O
+                         net (fo=80, routed)          2.214     3.684    A3/m01/sel
+    SLICE_X112Y104       LUT3 (Prop_lut3_I0_O)        0.124     3.808 f  A3/m01/l1/O
+                         net (fo=2, routed)           0.701     4.509    A3/m12/b
+    SLICE_X112Y104       LUT3 (Prop_lut3_I2_O)        0.124     4.633 r  A3/m12/l1/O
+                         net (fo=2, routed)           0.887     5.519    A3/m22/a
+    SLICE_X113Y104       LUT3 (Prop_lut3_I1_O)        0.124     5.643 f  A3/m22/l1/O
+                         net (fo=2, routed)           0.806     6.449    A3/m31/b
+    SLICE_X113Y103       LUT3 (Prop_lut3_I2_O)        0.124     6.573 r  A3/m31/l1/O
+                         net (fo=2, routed)           0.681     7.254    A3/m42/b
+    SLICE_X113Y103       LUT3 (Prop_lut3_I2_O)        0.124     7.378 f  A3/m42/l1/O
+                         net (fo=2, routed)           0.889     8.267    A3/m51/b
+    SLICE_X112Y103       LUT3 (Prop_lut3_I2_O)        0.124     8.391 r  A3/m51/l1/O
+                         net (fo=2, routed)           0.799     9.190    A3/m62/b
+    SLICE_X111Y103       LUT3 (Prop_lut3_I2_O)        0.124     9.314 f  A3/m62/l1/O
+                         net (fo=2, routed)           0.806    10.120    A3/m71/b
+    SLICE_X110Y102       LUT3 (Prop_lut3_I2_O)        0.124    10.244 r  A3/m71/l1/O
+                         net (fo=2, routed)           0.592    10.836    A3/m81/a
+    SLICE_X109Y102       LUT3 (Prop_lut3_I1_O)        0.124    10.960 f  A3/m81/l1/O
+                         net (fo=2, routed)           0.842    11.801    A3/m92/b
+    SLICE_X108Y100       LUT3 (Prop_lut3_I2_O)        0.124    11.925 r  A3/m92/l1/O
+                         net (fo=2, routed)           0.963    12.888    A3/m102/a
+    SLICE_X108Y99        LUT3 (Prop_lut3_I1_O)        0.124    13.012 f  A3/m102/l1/O
+                         net (fo=2, routed)           0.182    13.194    A3/m112/a
+    SLICE_X108Y99        LUT3 (Prop_lut3_I1_O)        0.124    13.318 r  A3/m112/l1/O
+                         net (fo=2, routed)           0.807    14.125    A3/m121/b
+    SLICE_X106Y99        LUT3 (Prop_lut3_I2_O)        0.124    14.249 f  A3/m121/l1/O
+                         net (fo=2, routed)           0.720    14.969    A3/m132/b
+    SLICE_X107Y99        LUT3 (Prop_lut3_I2_O)        0.124    15.093 r  A3/m132/l1/O
+                         net (fo=2, routed)           0.808    15.901    A3/m142/a
+    SLICE_X107Y101       LUT3 (Prop_lut3_I1_O)        0.124    16.025 f  A3/m142/l1/O
+                         net (fo=2, routed)           0.667    16.691    A3/m151/b
+    SLICE_X106Y101       LUT3 (Prop_lut3_I2_O)        0.124    16.815 r  A3/m151/l1/O
+                         net (fo=2, routed)           0.681    17.496    A3/m162/b
+    SLICE_X106Y101       LUT3 (Prop_lut3_I2_O)        0.124    17.620 f  A3/m162/l1/O
+                         net (fo=2, routed)           0.824    18.444    A3/m171/b
+    SLICE_X106Y100       LUT3 (Prop_lut3_I2_O)        0.124    18.568 r  A3/m171/l1/O
+                         net (fo=2, routed)           0.808    19.376    A3/m181/a
+    SLICE_X109Y99        LUT3 (Prop_lut3_I1_O)        0.124    19.500 f  A3/m181/l1/O
+                         net (fo=2, routed)           0.657    20.157    A3/m191/a
+    SLICE_X109Y99        LUT3 (Prop_lut3_I1_O)        0.124    20.281 r  A3/m191/l1/O
+                         net (fo=2, routed)           0.811    21.092    A3/m202/b
+    SLICE_X111Y99        LUT3 (Prop_lut3_I2_O)        0.124    21.216 f  A3/m202/l1/O
+                         net (fo=2, routed)           0.670    21.885    A3/m212/a
+    SLICE_X110Y99        LUT3 (Prop_lut3_I1_O)        0.124    22.009 r  A3/m212/l1/O
+                         net (fo=2, routed)           0.594    22.603    A3/m221/b
+    SLICE_X110Y98        LUT3 (Prop_lut3_I2_O)        0.124    22.727 f  A3/m221/l1/O
+                         net (fo=2, routed)           0.679    23.407    A3/m231/a
+    SLICE_X110Y98        LUT3 (Prop_lut3_I1_O)        0.124    23.531 r  A3/m231/l1/O
+                         net (fo=2, routed)           0.960    24.491    A3/m242/b
+    SLICE_X110Y97        LUT3 (Prop_lut3_I2_O)        0.124    24.615 f  A3/m242/l1/O
+                         net (fo=2, routed)           0.809    25.423    A3/m252/a
+    SLICE_X110Y96        LUT3 (Prop_lut3_I1_O)        0.124    25.547 r  A3/m252/l1/O
+                         net (fo=2, routed)           0.806    26.353    A3/m261/b
+    SLICE_X110Y95        LUT3 (Prop_lut3_I2_O)        0.124    26.477 f  A3/m261/l1/O
+                         net (fo=2, routed)           0.651    27.128    A3/m272/b
+    SLICE_X110Y93        LUT3 (Prop_lut3_I2_O)        0.124    27.252 r  A3/m272/l1/O
+                         net (fo=2, routed)           0.666    27.918    A3/m282/a
+    SLICE_X111Y93        LUT3 (Prop_lut3_I1_O)        0.124    28.042 f  A3/m282/l1/O
+                         net (fo=2, routed)           0.806    28.848    A3/m291/b
+    SLICE_X110Y92        LUT3 (Prop_lut3_I2_O)        0.124    28.972 r  A3/m291/l1/O
+                         net (fo=2, routed)           0.583    29.555    A3/m302/b
+    SLICE_X110Y91        LUT3 (Prop_lut3_I2_O)        0.124    29.679 f  A3/m302/l1/O
+                         net (fo=2, routed)           0.887    30.566    A3/m311/b
+    SLICE_X111Y91        LUT3 (Prop_lut3_I2_O)        0.124    30.690 f  A3/m311/l1/O
+                         net (fo=2, routed)           0.811    31.502    A3/yt_31
+    SLICE_X112Y90        LUT3 (Prop_lut3_I2_O)        0.124    31.626 f  A3/response_INST_0_i_1/O
+                         net (fo=2, routed)           0.463    32.088    A3/response_INST_0_i_1_n_0
+    SLICE_X112Y90        LUT3 (Prop_lut3_I0_O)        0.124    32.212 r  A3/response_INST_0/O
+                         net (fo=1, routed)           3.178    35.391    Q_OBUF[3]
+    V22                  OBUF (Prop_obuf_I_O)         3.537    38.928 r  Q_OBUF[3]_inst/O
+                         net (fo=0)                   0.000    38.928    Q[3]
+    V22                                                               r  Q[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 C[6]
+                            (input port)
+  Destination:            Q[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        4.155ns  (logic 1.717ns (41.316%)  route 2.438ns (58.684%))
+  Logic Levels:           8  (IBUF=1 LUT3=6 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    H15                                               0.000     0.000 r  C[6] (IN)
+                         net (fo=0)                   0.000     0.000    C[6]
+    H15                  IBUF (Prop_ibuf_I_O)         0.233     0.233 r  C_IBUF[6]_inst/O
+                         net (fo=64, routed)          0.877     1.110    A1/m272/sel
+    SLICE_X106Y92        LUT3 (Prop_lut3_I0_O)        0.045     1.155 r  A1/m272/l1/O
+                         net (fo=2, routed)           0.069     1.224    A1/m281/b
+    SLICE_X106Y92        LUT3 (Prop_lut3_I2_O)        0.045     1.269 f  A1/m281/l1/O
+                         net (fo=2, routed)           0.121     1.390    A1/m292/b
+    SLICE_X106Y91        LUT3 (Prop_lut3_I2_O)        0.045     1.435 r  A1/m292/l1/O
+                         net (fo=2, routed)           0.069     1.504    A1/m301/b
+    SLICE_X106Y91        LUT3 (Prop_lut3_I2_O)        0.045     1.549 f  A1/m301/l1/O
+                         net (fo=2, routed)           0.128     1.677    A1/m311/a
+    SLICE_X110Y91        LUT3 (Prop_lut3_I1_O)        0.045     1.722 f  A1/m311/l1/O
+                         net (fo=2, routed)           0.231     1.954    A1/yt_31
+    SLICE_X110Y90        LUT3 (Prop_lut3_I1_O)        0.045     1.999 r  A1/response_INST_0/O
+                         net (fo=1, routed)           0.943     2.941    Q_OBUF[1]
+    U19                  OBUF (Prop_obuf_I_O)         1.213     4.155 r  Q_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     4.155    Q[1]
+    U19                                                               r  Q[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 C[6]
+                            (input port)
+  Destination:            Q[6]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        4.206ns  (logic 1.726ns (41.045%)  route 2.480ns (58.955%))
+  Logic Levels:           8  (IBUF=1 LUT3=6 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    H15                                               0.000     0.000 r  C[6] (IN)
+                         net (fo=0)                   0.000     0.000    C[6]
+    H15                  IBUF (Prop_ibuf_I_O)         0.233     0.233 r  C_IBUF[6]_inst/O
+                         net (fo=64, routed)          0.582     0.815    A6/m272/sel
+    SLICE_X111Y96        LUT3 (Prop_lut3_I0_O)        0.045     0.860 f  A6/m272/l1/O
+                         net (fo=2, routed)           0.120     0.981    A6/m281/b
+    SLICE_X109Y96        LUT3 (Prop_lut3_I2_O)        0.045     1.026 r  A6/m281/l1/O
+                         net (fo=2, routed)           0.339     1.365    A6/m292/b
+    SLICE_X110Y94        LUT3 (Prop_lut3_I2_O)        0.045     1.410 f  A6/m292/l1/O
+                         net (fo=2, routed)           0.070     1.480    A6/m302/a
+    SLICE_X110Y94        LUT3 (Prop_lut3_I1_O)        0.045     1.525 r  A6/m302/l1/O
+                         net (fo=2, routed)           0.158     1.683    A6/m312/a
+    SLICE_X110Y93        LUT3 (Prop_lut3_I1_O)        0.045     1.728 r  A6/m312/l1/O
+                         net (fo=2, routed)           0.222     1.950    A6/yb_31
+    SLICE_X111Y92        LUT3 (Prop_lut3_I2_O)        0.045     1.995 r  A6/response_INST_0/O
+                         net (fo=1, routed)           0.988     2.983    Q_OBUF[6]
+    T22                  OBUF (Prop_obuf_I_O)         1.223     4.206 r  Q_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     4.206    Q[6]
+    T22                                                               r  Q[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 C[6]
+                            (input port)
+  Destination:            Q[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        4.347ns  (logic 1.735ns (39.919%)  route 2.612ns (60.081%))
+  Logic Levels:           8  (IBUF=1 LUT3=6 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    H15                                               0.000     0.000 r  C[6] (IN)
+                         net (fo=0)                   0.000     0.000    C[6]
+    H15                  IBUF (Prop_ibuf_I_O)         0.233     0.233 r  C_IBUF[6]_inst/O
+                         net (fo=64, routed)          0.590     0.823    A4/m272/sel
+    SLICE_X110Y96        LUT3 (Prop_lut3_I0_O)        0.045     0.868 f  A4/m272/l1/O
+                         net (fo=2, routed)           0.226     1.094    A4/m281/b
+    SLICE_X110Y92        LUT3 (Prop_lut3_I2_O)        0.045     1.139 r  A4/m281/l1/O
+                         net (fo=2, routed)           0.244     1.383    A4/m292/b
+    SLICE_X111Y92        LUT3 (Prop_lut3_I2_O)        0.045     1.428 f  A4/m292/l1/O
+                         net (fo=2, routed)           0.203     1.631    A4/m302/a
+    SLICE_X111Y91        LUT3 (Prop_lut3_I1_O)        0.045     1.676 r  A4/m302/l1/O
+                         net (fo=2, routed)           0.193     1.869    A4/m312/a
+    SLICE_X112Y91        LUT3 (Prop_lut3_I1_O)        0.045     1.914 r  A4/m312/l1/O
+                         net (fo=2, routed)           0.117     2.032    A4/yb_31
+    SLICE_X112Y90        LUT3 (Prop_lut3_I2_O)        0.045     2.077 r  A4/response_INST_0/O
+                         net (fo=1, routed)           1.038     3.115    Q_OBUF[4]
+    U22                  OBUF (Prop_obuf_I_O)         1.232     4.347 r  Q_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     4.347    Q[4]
+    U22                                                               r  Q[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 C[6]
+                            (input port)
+  Destination:            Q[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        4.380ns  (logic 1.735ns (39.615%)  route 2.645ns (60.385%))
+  Logic Levels:           8  (IBUF=1 LUT3=6 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    H15                                               0.000     0.000 r  C[6] (IN)
+                         net (fo=0)                   0.000     0.000    C[6]
+    H15                  IBUF (Prop_ibuf_I_O)         0.233     0.233 r  C_IBUF[6]_inst/O
+                         net (fo=64, routed)          0.743     0.976    A2/m271/sel
+    SLICE_X112Y97        LUT3 (Prop_lut3_I0_O)        0.045     1.021 f  A2/m271/l1/O
+                         net (fo=2, routed)           0.117     1.138    A2/m282/b
+    SLICE_X112Y96        LUT3 (Prop_lut3_I2_O)        0.045     1.183 r  A2/m282/l1/O
+                         net (fo=2, routed)           0.065     1.248    A2/m291/b
+    SLICE_X112Y96        LUT3 (Prop_lut3_I2_O)        0.045     1.293 f  A2/m291/l1/O
+                         net (fo=2, routed)           0.295     1.588    A2/m301/a
+    SLICE_X112Y95        LUT3 (Prop_lut3_I1_O)        0.045     1.633 r  A2/m301/l1/O
+                         net (fo=2, routed)           0.227     1.860    A2/m312/b
+    SLICE_X112Y94        LUT3 (Prop_lut3_I2_O)        0.045     1.905 r  A2/m312/l1/O
+                         net (fo=2, routed)           0.065     1.970    A2/yb_31
+    SLICE_X112Y94        LUT3 (Prop_lut3_I2_O)        0.045     2.015 r  A2/response_INST_0/O
+                         net (fo=1, routed)           1.133     3.148    Q_OBUF[2]
+    W22                  OBUF (Prop_obuf_I_O)         1.232     4.380 r  Q_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     4.380    Q[2]
+    W22                                                               r  Q[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 C[2]
+                            (input port)
+  Destination:            Q[7]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        4.421ns  (logic 1.622ns (36.674%)  route 2.800ns (63.326%))
+  Logic Levels:           5  (IBUF=1 LUT3=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    F21                                               0.000     0.000 r  C[2] (IN)
+                         net (fo=0)                   0.000     0.000    C[2]
+    F21                  IBUF (Prop_ibuf_I_O)         0.272     0.272 r  C_IBUF[2]_inst/O
+                         net (fo=80, routed)          1.432     1.703    A7/m302/sel
+    SLICE_X109Y94        LUT3 (Prop_lut3_I0_O)        0.045     1.748 r  A7/m302/l1/O
+                         net (fo=2, routed)           0.116     1.865    A7/m312/a
+    SLICE_X111Y94        LUT3 (Prop_lut3_I1_O)        0.045     1.910 r  A7/m312/l1/O
+                         net (fo=2, routed)           0.191     2.101    A7/yb_31
+    SLICE_X113Y94        LUT3 (Prop_lut3_I2_O)        0.045     2.146 r  A7/response_INST_0/O
+                         net (fo=1, routed)           1.061     3.207    Q_OBUF[7]
+    T21                  OBUF (Prop_obuf_I_O)         1.215     4.421 r  Q_OBUF[7]_inst/O
+                         net (fo=0)                   0.000     4.421    Q[7]
+    T21                                                               r  Q[7] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 C[6]
+                            (input port)
+  Destination:            Q[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        4.581ns  (logic 1.706ns (37.246%)  route 2.875ns (62.754%))
+  Logic Levels:           8  (IBUF=1 LUT3=6 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    H15                                               0.000     0.000 r  C[6] (IN)
+                         net (fo=0)                   0.000     0.000    C[6]
+    H15                  IBUF (Prop_ibuf_I_O)         0.233     0.233 r  C_IBUF[6]_inst/O
+                         net (fo=64, routed)          0.960     1.193    A0/m271/sel
+    SLICE_X106Y93        LUT3 (Prop_lut3_I0_O)        0.045     1.238 r  A0/m271/l1/O
+                         net (fo=2, routed)           0.273     1.512    A0/m282/b
+    SLICE_X109Y93        LUT3 (Prop_lut3_I2_O)        0.045     1.557 f  A0/m282/l1/O
+                         net (fo=2, routed)           0.060     1.617    A0/m291/b
+    SLICE_X109Y93        LUT3 (Prop_lut3_I2_O)        0.045     1.662 r  A0/m291/l1/O
+                         net (fo=2, routed)           0.124     1.785    A0/m302/b
+    SLICE_X112Y93        LUT3 (Prop_lut3_I2_O)        0.045     1.830 f  A0/m302/l1/O
+                         net (fo=2, routed)           0.065     1.895    A0/m311/b
+    SLICE_X112Y93        LUT3 (Prop_lut3_I2_O)        0.045     1.940 f  A0/m311/l1/O
+                         net (fo=2, routed)           0.232     2.172    A0/yt_31
+    SLICE_X112Y89        LUT3 (Prop_lut3_I1_O)        0.045     2.217 r  A0/response_INST_0/O
+                         net (fo=1, routed)           1.161     3.378    Q_OBUF[0]
+    U14                  OBUF (Prop_obuf_I_O)         1.203     4.581 r  Q_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     4.581    Q[0]
+    U14                                                               r  Q[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 C[6]
+                            (input port)
+  Destination:            Q[5]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        4.620ns  (logic 1.734ns (37.531%)  route 2.886ns (62.469%))
+  Logic Levels:           8  (IBUF=1 LUT3=6 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    H15                                               0.000     0.000 r  C[6] (IN)
+                         net (fo=0)                   0.000     0.000    C[6]
+    H15                  IBUF (Prop_ibuf_I_O)         0.233     0.233 r  C_IBUF[6]_inst/O
+                         net (fo=64, routed)          1.079     1.312    A5/m271/sel
+    SLICE_X113Y94        LUT3 (Prop_lut3_I0_O)        0.045     1.357 f  A5/m271/l1/O
+                         net (fo=2, routed)           0.145     1.503    A5/m282/b
+    SLICE_X113Y93        LUT3 (Prop_lut3_I2_O)        0.045     1.548 r  A5/m282/l1/O
+                         net (fo=2, routed)           0.060     1.608    A5/m291/b
+    SLICE_X113Y93        LUT3 (Prop_lut3_I2_O)        0.045     1.653 f  A5/m291/l1/O
+                         net (fo=2, routed)           0.285     1.938    A5/m302/b
+    SLICE_X112Y92        LUT3 (Prop_lut3_I2_O)        0.045     1.983 r  A5/m302/l1/O
+                         net (fo=2, routed)           0.063     2.046    A5/m312/a
+    SLICE_X112Y92        LUT3 (Prop_lut3_I1_O)        0.045     2.091 r  A5/m312/l1/O
+                         net (fo=2, routed)           0.225     2.316    A5/yb_31
+    SLICE_X112Y91        LUT3 (Prop_lut3_I2_O)        0.045     2.361 r  A5/response_INST_0/O
+                         net (fo=1, routed)           1.028     3.389    Q_OBUF[5]
+    U21                  OBUF (Prop_obuf_I_O)         1.231     4.620 r  Q_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     4.620    Q[5]
+    U21                                                               r  Q[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 C[6]
+                            (input port)
+  Destination:            Q[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        4.775ns  (logic 1.741ns (36.454%)  route 3.035ns (63.546%))
+  Logic Levels:           8  (IBUF=1 LUT3=6 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    H15                                               0.000     0.000 r  C[6] (IN)
+                         net (fo=0)                   0.000     0.000    C[6]
+    H15                  IBUF (Prop_ibuf_I_O)         0.233     0.233 r  C_IBUF[6]_inst/O
+                         net (fo=64, routed)          1.039     1.272    A3/m271/sel
+    SLICE_X110Y93        LUT3 (Prop_lut3_I0_O)        0.045     1.317 f  A3/m271/l1/O
+                         net (fo=2, routed)           0.168     1.485    A3/m282/b
+    SLICE_X111Y93        LUT3 (Prop_lut3_I2_O)        0.045     1.530 r  A3/m282/l1/O
+                         net (fo=2, routed)           0.200     1.729    A3/m292/a
+    SLICE_X110Y92        LUT3 (Prop_lut3_I1_O)        0.045     1.774 f  A3/m292/l1/O
+                         net (fo=2, routed)           0.121     1.896    A3/m301/b
+    SLICE_X110Y91        LUT3 (Prop_lut3_I2_O)        0.045     1.941 r  A3/m301/l1/O
+                         net (fo=2, routed)           0.244     2.185    A3/m312/b
+    SLICE_X111Y91        LUT3 (Prop_lut3_I2_O)        0.045     2.230 r  A3/m312/l1/O
+                         net (fo=2, routed)           0.275     2.506    A3/yb_31
+    SLICE_X112Y90        LUT3 (Prop_lut3_I2_O)        0.045     2.551 r  A3/response_INST_0/O
+                         net (fo=1, routed)           0.987     3.538    Q_OBUF[3]
+    V22                  OBUF (Prop_obuf_I_O)         1.238     4.775 r  Q_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     4.775    Q[3]
+    V22                                                               r  Q[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
